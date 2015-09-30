@@ -10,3 +10,4 @@ This designer was named Paul Flavius ([@npaulflavius](https://twitter.com/npaulf
 ---
 
  - Day 001 - Login Form
+ - Day 002 - Product Card
