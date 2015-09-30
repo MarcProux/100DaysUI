@@ -1,0 +1,183 @@
+@charset "UTF-8";
+*::after, *::before, * {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #dfdfdf;
+}
+
+#card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 527px;
+  height: 680px;
+  background: #8e44ad url(../img/bg.jpg) no-repeat center;
+  box-shadow: 0px 48px 40px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 48px 40px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 48px 40px 0px rgba(0, 0, 0, 0.7);
+}
+
+.card__filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 85, 0.75);
+}
+
+.card__nav {
+  position: relative;
+  z-index: 10;
+  padding-left: 30px;
+}
+.card__nav > h1 {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  display: inline-block;
+  padding: 90px 0 0 45px;
+}
+.card__nav > h1 > a {
+  text-decoration: none;
+  color: #686e86;
+}
+.card__nav > h1 > a.active {
+  color: white;
+  border-bottom: 3px solid #1060ed;
+}
+
+.card__body {
+  position: relative;
+  z-index: 10;
+  padding: 75px 75px 0 75px;
+  font-family: 'Montserrat';
+}
+.card__body label, .card__body input[type=text], .card__body input[type=password], .card__body button {
+  display: block;
+  width: 100%;
+}
+.card__body input[type=text], .card__body input[type=password], .card__body button {
+  border: none;
+  height: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.card__body label {
+  font-variant: small-caps;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #686e86;
+}
+.card__body input[type=text], .card__body input[type=password] {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0px 20px;
+}
+.card__body button {
+  font-family: 'Montserrat';
+  cursor: pointer;
+  background-color: #1060ed;
+}
+.card__body .rounded {
+  border-radius: 50px;
+}
+.card__body .check {
+  padding: 15px 20px;
+}
+.card__body .check input[type=checkbox], .card__body .check p {
+  display: inline-block;
+}
+.card__body .check label {
+  color: #fff;
+}
+
+.separator {
+  position: relative;
+  z-index: 10;
+  margin: 50px 75px 0 75px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card__forgot {
+  position: relative;
+  z-index: 10;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 50px 0;
+}
+.card__forgot > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #686e86;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  font-size: 14px;
+  color: #fff;
+  transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:before {
+  background: #1060ed;
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
