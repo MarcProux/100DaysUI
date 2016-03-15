@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:500,400);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  background: #d5fbef;
+  font-family: Poppins;
+}
+
+.items-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.items-container .item {
+  margin: 0 30px;
+  height: 350px;
+  transition: all 0.3s ease-in-out;
+}
+.items-container .item img {
+  width: 240px;
+  height: 350px;
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.5);
+}
+.items-container .item span, .items-container .item a {
+  display: none;
+}
+.items-container .highlight {
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 0;
+  height: 633px;
+}
+.items-container .highlight > img {
+  margin: 40px;
+}
+.items-container .highlight > span, .items-container .highlight > .price-container span, .items-container .highlight > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.items-container .highlight > span:nth-of-type(1) {
+  color: #5c5b60;
+  font-size: 18px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+.items-container .highlight > span:nth-of-type(2) {
+  color: #c6c5c7;
+  font-size: 14px;
+}
+.items-container .highlight > .price-container {
+  padding: 30px;
+}
+.items-container .highlight > .price-container span:nth-of-type(1) {
+  color: #5ec824;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.items-container .highlight > .price-container span:nth-of-type(2) {
+  color: #c6c5c7;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.items-container .highlight > a {
+  background: #2c2929;
+  height: 50px;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.items-container .highlight > a:hover {
+  background: #5ec824;
+}
