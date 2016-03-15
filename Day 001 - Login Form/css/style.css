@@ -24,7 +24,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(34, 34, 85, 0.75);
+  background-color: rgba(34, 34, 85, 0.9);
 }
 
 .card__nav {
@@ -34,7 +34,8 @@ html, body {
 }
 .card__nav > h1 {
   font-family: 'Montserrat';
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 22px;
   display: inline-block;
   padding: 90px 0 0 45px;
 }
@@ -75,6 +76,7 @@ html, body {
 }
 .card__body button {
   font-family: 'Montserrat';
+  font-weight: 300;
   cursor: pointer;
   background-color: #1060ed;
 }
@@ -94,7 +96,7 @@ html, body {
 .separator {
   position: relative;
   z-index: 10;
-  margin: 50px 75px 0 75px;
+  margin: 55px 75px 0 75px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -104,7 +106,7 @@ html, body {
   z-index: 10;
   font-family: 'Montserrat';
   text-align: center;
-  padding: 50px 0;
+  padding: 55px 0;
 }
 .card__forgot > a {
   font-size: 16px;
@@ -132,7 +134,7 @@ html, body {
   left: 0;
   width: 17px;
   height: 17px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
