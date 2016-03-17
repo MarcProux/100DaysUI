@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.grid-1 {
+  margin: 2px;
+  width: 89.5px;
+}
+
+.grid-2 {
+  margin: 2px;
+  width: 183px;
+}
+
+.grid-3 {
+  margin: 2px;
+  width: 276.5px;
+}
+
+.grid-4 {
+  margin: 2px;
+  width: 370px;
+}
+
+html, body {
+  height: 100%;
+  background: -webkit-linear-gradient(#ffffff, #bac7e1);
+  background: -moz-linear-gradient(#ffffff, #bac7e1);
+  background: -o-linear-gradient(#ffffff, #bac7e1);
+  background: linear-gradient(#ffffff, #bac7e1);
+  font-family: Poppins;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 428px;
+  height: 884px;
+  background: url(../img/iphone_bg.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 109px 26px 111px 28px;
+}
+#container .display_result {
+  height: 171px;
+  background: -webkit-linear-gradient(#0fffff, #30bcf3);
+  background: -moz-linear-gradient(#0fffff, #30bcf3);
+  background: -o-linear-gradient(#0fffff, #30bcf3);
+  background: linear-gradient(#0fffff, #30bcf3);
+}
+#container .display_result #result, #container .display_result #equals, #container .display_result #operation {
+  text-align: center;
+  color: #ffffff;
+}
+#container .display_result #result {
+  height: 110px;
+  line-height: 110px;
+  font-size: 90px;
+}
+#container .display_result #equals {
+  height: 15px;
+  line-height: 15px;
+}
+#container .display_result #operation {
+  height: 46px;
+  line-height: 46px;
+  font-size: 20px;
+}
+#container .keyboard {
+  height: calc(100% - 171px);
+  background: -webkit-linear-gradient(#30bcf3, #ad3fc7);
+  background: -moz-linear-gradient(#30bcf3, #ad3fc7);
+  background: -o-linear-gradient(#30bcf3, #ad3fc7);
+  background: linear-gradient(#30bcf3, #ad3fc7);
+  display: flex;
+  flex-flow: row wrap;
+}
+#container .keyboard > a {
+  height: 94px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 94px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 30px;
+  color: #fff;
+}

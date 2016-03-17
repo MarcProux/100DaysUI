@@ -1,0 +1,9 @@
+$gutter: 2px;
+$container: 4;
+
+@for $i from 1 through $container {
+    .grid-#{$i} {
+        margin: $gutter;
+        width: (374px / $container * $i) - $gutter * 2
+    }
+}

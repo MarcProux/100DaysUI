@@ -1,0 +1,66 @@
+#container {
+    width: 428px;
+    height: 884px;
+    background: url(../img/iphone_bg.png);
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    padding: 109px 26px 111px 28px;
+
+    .display_result {
+        height: 171px;
+
+        background: -webkit-linear-gradient($color3, $color4);
+        background:    -moz-linear-gradient($color3, $color4);
+        background:      -o-linear-gradient($color3, $color4);
+        background:         linear-gradient($color3, $color4);
+
+        #result, #equals, #operation {
+            text-align: center;
+            color: $color1;
+        }
+
+        #result {
+            height: 110px;
+            line-height: 110px;
+            font-size: 90px;
+        }
+
+        #equals {
+            height: 15px;
+            line-height: 15px;
+        }
+
+        #operation {
+            height: 46px;
+            line-height: 46px;
+            font-size: 20px;
+        }
+    }
+
+    .keyboard {
+        height: calc(100% - 171px);
+
+        background: -webkit-linear-gradient($color4, $color5);
+        background:    -moz-linear-gradient($color4, $color5);
+        background:      -o-linear-gradient($color4, $color5);
+        background:         linear-gradient($color4, $color5);
+
+        display: flex;
+        flex-flow: row wrap;
+
+        > a {
+            height: 94px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 94px;
+
+            background: rgba(255, 255, 255, .2);
+
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+}
