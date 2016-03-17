@@ -1,0 +1,134 @@
+#container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    background: $color1;
+    height: 480px;
+    width: 350px;
+    overflow: hidden;
+
+    #header {
+        background: $color2;
+        height: 125px;
+        padding: 32px;
+
+        .selectStyle {
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+
+            background: $color3;
+            border-radius: 4px;
+
+            select {
+                width: 100%;
+                height: 100%;
+
+                border: none;
+                background: url("../img/arrow.png") no-repeat right 20px center;
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                padding: 10px;
+                font-size: 14px;
+                font-weight: 600;
+                color: $color1;
+                outline: none;
+            }
+
+            option {
+                border: none;
+                background: $color3;
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+        }
+
+        a {
+            height: 60px;
+            width: 60px;
+            display: inline-block;
+            vertical-align: top;
+            float: right;
+            text-align: center;
+            line-height: 60px;
+            border: 1px dashed $color4;
+        }
+    }
+
+    #content {
+        height: 355px;
+        padding: 0 30px;
+
+        overflow: auto;
+
+        #items {height: auto;}
+
+        .item {
+            padding: 20px 0 0 0;
+            min-height: 56px;
+
+            > div {
+                float: left;
+                width: calc(100% - 55px);
+                padding-left: 10px;
+            }
+
+            img {
+                width: 45px;
+                height: 36px;
+                float: left;
+            }
+
+            progress {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                width: 100%;
+                background: $color5;
+
+                height: 2px;
+                vertical-align: .3em;
+            }
+
+            progress::-moz-progress-bar      {background: $color6;}
+            progress::-webkit-progress-bar   {background: $color6;}
+            progress::-moz-progress-value    {background: $color5;}
+            progress::-webkit-progress-value {background: $color5;}
+
+            .item_title {
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color2;
+            }
+
+            .item_data, .item_kbs {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .item_data {color: $color7;}
+            .item_kbs {color: $color8;}
+
+        }
+
+        .item:last-child {
+            padding: 20px 0;
+            min-height: 76px;
+        }
+    }
+
+    #content::-webkit-scrollbar       {width: 8px;}
+    #content::-webkit-scrollbar-track {background: rgba($color2, .2);}
+    #content::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba($color2, .3);
+    }
+}

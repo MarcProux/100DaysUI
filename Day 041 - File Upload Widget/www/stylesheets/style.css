@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  background: -webkit-linear-gradient(-45deg, #a3c9a8, #a19eb5);
+  background: -moz-linear-gradient(-45deg, #a3c9a8, #a19eb5);
+  background: -o-linear-gradient(-45deg, #a3c9a8, #a19eb5);
+  background: linear-gradient(-45deg, #a3c9a8, #a19eb5);
+  font-family: Open Sans;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.ps-scrollbar-y-rail {
+  margin-top: 125px;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #ffffff;
+  height: 480px;
+  width: 350px;
+  overflow: hidden;
+}
+#container #header {
+  background: #333333;
+  height: 125px;
+  padding: 32px;
+}
+#container #header .selectStyle {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  background: #3d3d3d;
+  border-radius: 4px;
+}
+#container #header .selectStyle select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: url("../img/arrow.png") no-repeat right 20px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  outline: none;
+}
+#container #header .selectStyle option {
+  border: none;
+  background: #3d3d3d;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#container #header a {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+  border: 1px dashed #484848;
+}
+#container #content {
+  height: 355px;
+  padding: 0 30px;
+  overflow: auto;
+}
+#container #content #items {
+  height: auto;
+}
+#container #content .item {
+  padding: 20px 0 0 0;
+  min-height: 56px;
+}
+#container #content .item > div {
+  float: left;
+  width: calc(100% - 55px);
+  padding-left: 10px;
+}
+#container #content .item img {
+  width: 45px;
+  height: 36px;
+  float: left;
+}
+#container #content .item progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: #a3d39c;
+  height: 2px;
+  vertical-align: .3em;
+}
+#container #content .item progress::-moz-progress-bar {
+  background: #e6e6e6;
+}
+#container #content .item progress::-webkit-progress-bar {
+  background: #e6e6e6;
+}
+#container #content .item progress::-moz-progress-value {
+  background: #a3d39c;
+}
+#container #content .item progress::-webkit-progress-value {
+  background: #a3d39c;
+}
+#container #content .item .item_title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+#container #content .item .item_data, #container #content .item .item_kbs {
+  line-height: 25px;
+  font-size: 14px;
+}
+#container #content .item .item_data {
+  color: #666666;
+}
+#container #content .item .item_kbs {
+  color: #999999;
+}
+#container #content .item:last-child {
+  padding: 20px 0;
+  min-height: 76px;
+}
+#container #content::-webkit-scrollbar {
+  width: 8px;
+}
+#container #content::-webkit-scrollbar-track {
+  background: rgba(51, 51, 51, 0.2);
+}
+#container #content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(51, 51, 51, 0.3);
+}
