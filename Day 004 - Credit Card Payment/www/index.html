@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <title> Day 004 - Credit Card Payment</title>
+  </head>
+  <body>
+    <div class="body__filter"></div>
+    <div id="container">
+      <div id="middle">
+        <div class="header">
+          <div><span>Payment</span><span>details</span></div><img src="img/d004-visa.png" alt="">
+        </div>
+        <div class="content">
+          <form action="#" class="form">
+            <div class="details">
+              <div class="col-2 pr">
+                <label for="name">Cardholder's name</label>
+                <input type="text" name="name">
+              </div>
+              <div class="col-2 pl">
+                <label for="number">Card number</label>
+                <input type="text" name="number">
+              </div>
+            </div>
+            <div class="info">
+              <div class="col-3 pr">
+                <label for="expiryMM">Expiry date</label>
+                <select name="expiryMM">
+                  <option value="">Month</option>
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+              <div class="col-3 pl pr">
+                <select>
+                  <option value="">Year</option>
+                  <option value="01">2019</option>
+                  <option value="02">2018</option>
+                  <option value="03">2017</option>
+                  <option value="04">2016</option>
+                </select>
+              </div>
+              <div class="col-3 pl">
+                <label for="cvv">CVV</label>
+                <input type="text" name="cvv">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="bottom"><a href="#">Complete order<i class="fa fa-long-arrow-right"></i></a></div>
+    </div>
+  </body>
+</html>

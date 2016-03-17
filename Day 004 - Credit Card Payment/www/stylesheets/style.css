@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: #E0DEDE;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.body__filter {
+  background: url(../img/d004-bg.png) no-repeat;
+  height: 800px;
+  width: 1000px;
+  position: absolute;
+  box-shadow: 0 0 100px 5px #2a2a2a;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 15px;
+}
+.body__filter:after {
+  content: '';
+  background: url(../img/d004-after.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.1;
+  border-radius: 15px;
+}
+
+#container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 850px;
+  height: 530px;
+}
+#container #middle {
+  width: 850px;
+  height: 530px;
+}
+#container #middle .header {
+  width: 100%;
+  height: 170px;
+  background: #018ffd;
+  border-radius: 27px 27px 0 0;
+}
+#container #middle .header div {
+  display: inline-block;
+  padding: 60px;
+}
+#container #middle .header div span {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+}
+#container #middle .header img {
+  position: relative;
+  right: 60px;
+  float: right;
+  top: 60px;
+}
+#container #middle .content {
+  width: 100%;
+  height: 360px;
+  background: #ffffff;
+  border-radius: 0 0 27px 27px;
+}
+#container #middle .content .form {
+  padding: 45px 50px;
+  height: 100%;
+}
+#container #middle .content .form .details {
+  margin-bottom: 50px;
+}
+#container #middle .content .form input, #container #middle .content .form label, #container #middle .content .form select {
+  display: block;
+  width: 100%;
+}
+#container #middle .content .form label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  text-transform: uppercase;
+  padding-bottom: 21px;
+}
+#container #middle .content .form input, #container #middle .content .form select {
+  border-radius: 11px;
+  height: 64px;
+  line-height: 64px;
+  border: 2px solid #cccccc;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+  outline: none;
+}
+#container #middle .content .form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/d004-down.png") no-repeat right 20px center;
+}
+#container #middle div {
+  margin: -4px;
+}
+#container #middle .col-2, #container #middle .col-3 {
+  display: inline-block;
+}
+#container #middle .col-2 {
+  width: 50%;
+}
+#container #middle .col-3 {
+  width: 255px;
+}
+#container #middle .pr {
+  padding-right: 15px;
+}
+#container #middle .pl {
+  padding-left: 15px;
+}
+#container #bottom {
+  margin-top: 20px;
+  position: absolute;
+  left: calc(100% - (365px - 75px));
+}
+#container #bottom a {
+  width: 365px;
+  float: right;
+  padding: 20px;
+  border: 2px solid #08365d;
+  border-right-style: none;
+  border-radius: 28px 0 0 28px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#container #bottom a i {
+  padding-left: 20px;
+  color: #dfb44d;
+}
+#container #bottom a:hover {
+  background: #08365d;
+}
+#container #bottom a:hover i {
+  color: #ffffff;
+}

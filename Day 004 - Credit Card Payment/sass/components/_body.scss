@@ -1,0 +1,9 @@
+body {
+    background: $bodyBG;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

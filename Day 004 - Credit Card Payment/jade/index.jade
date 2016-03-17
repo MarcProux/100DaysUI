@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        link( href="stylesheets/style.css" rel="stylesheet" )
+        link( href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" )
+        title  Day 004 - Credit Card Payment
+    body
+        div.body__filter
+        #container
+            #middle
+                .header
+                    div
+                        span Payment
+                        span details
+                    img(src="img/d004-visa.png", alt="")
+                .content
+                    form(action="#" class="form")
+                        .details
+                            .col-2.pr
+                                label(for="name") Cardholder's name
+                                input(type="text" name="name")
+                            .col-2.pl
+                                label(for="number") Card number
+                                input(type="text" name="number")
+                        .info
+                            .col-3.pr
+                                label(for="expiryMM") Expiry date
+                                select(name="expiryMM")
+                                    option(value="") Month
+                                    option(value="01") January
+                                    option(value="02") February
+                                    option(value="03") March
+                                    option(value="04") April
+                                    option(value="05") May
+                                    option(value="06") June
+                                    option(value="07") July
+                                    option(value="08") August
+                                    option(value="09") September
+                                    option(value="10") October
+                                    option(value="11") November
+                                    option(value="12") December
+                            .col-3.pl.pr
+                                select
+                                    option(value="") Year
+                                    option(value="01") 2019
+                                    option(value="02") 2018
+                                    option(value="03") 2017
+                                    option(value="04") 2016
+                            .col-3.pl
+                                label(for="cvv") CVV
+                                input(type="text" name="cvv")
+            #bottom
+                a(href="#") Complete order
+                    i(class="fa fa-long-arrow-right")

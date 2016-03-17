@@ -1,0 +1,100 @@
+#middle {
+    width: 850px;
+    height: 530px;
+
+    .header {
+        width: 100%;
+        height: 170px;
+        background: $headerBG;
+        border-radius: 27px 27px 0 0;
+
+        div {
+            display: inline-block;
+            padding: 60px;
+
+            span {
+                font-weight: bold;
+                font-size: 30px;
+                text-transform: uppercase;
+                color: white;
+                display: block;
+            }
+        }
+
+        img {
+            position: relative;
+            right: 60px;
+            float: right;
+            top: 60px;
+        }
+    }
+
+    .content {
+        width: 100%;
+        height: 360px;
+        background: $contentBG;
+        border-radius: 0 0 27px 27px;
+
+        .form {
+            padding: 45px 50px;
+            height: 100%;
+
+            .details {
+                margin-bottom: 50px;
+            }
+
+            input, label, select {
+                display: block;
+                width: 100%;
+            }
+
+            label {
+                font-weight: 400;
+                font-size: 14px;
+                color: $labelColor;
+                text-transform: uppercase;
+                padding-bottom: 21px;
+            }
+
+            input, select {
+                border-radius: 11px;
+                height: 64px;
+                line-height: 64px;
+                border: 2px solid $inputColor;
+                font-size: 24px;
+                font-weight: bold;
+                padding-left: 20px;
+                outline: none;
+            }
+
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background: url("../img/d004-down.png") no-repeat right 20px center
+            }
+        }
+    }
+
+    div {
+        margin: -4px;
+    }
+
+    .col-2, .col-3 {
+        display: inline-block;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
+    .col-3 {
+        width: 255px;
+    }
+
+    .pr {
+        padding-right: 15px;
+    }
+    .pl {
+        padding-left: 15px;
+    }
+}
