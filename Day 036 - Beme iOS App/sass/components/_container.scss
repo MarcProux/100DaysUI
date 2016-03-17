@@ -1,0 +1,117 @@
+#container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    #cardMain, #cardView {
+        width: 413px;
+        height: 750px;
+        background: $color1;
+
+        .header {
+            height: 110px;
+            border-bottom: 1px solid $color2;
+
+            padding: 40px 25px 20px;
+
+            a {position: relative; text-decoration: none;}
+            a:nth-of-type(1) {top: 15px;}
+            a:nth-of-type(2) {
+                top: 10px;
+                .badge {
+                    position: absolute;
+                    right: 14px; top: -6px;
+                    background: $color3;
+                    padding: 2px 5px;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    color: $fColor3;
+                }
+            }
+
+            div {
+                span {display: block; font-weight: 300; text-align: center;}
+            }
+
+        }
+    }
+
+    #cardMain {
+        .header {
+            div {
+                span:nth-of-type(1) {color: $fColor1; font-size: 22px; padding-bottom: 5px;}
+                span:nth-of-type(2) {color: $fColor2; font-size: 13px;}
+            }
+        }
+
+        .content {
+            padding: 0 15px;
+
+            .item {
+                margin: 15px 0 0 0;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    position: relative;
+                }
+
+                .details {
+                    position: absolute;
+                    top: 0px;
+                    background-color: rgba($color4, .7);
+                    width: 383px;
+                    height: 187px;
+
+                    > img {width: 70px; margin: 69px 0; border-radius: 50%;}
+                    a img {width: 40px; margin: 82px 0;}
+
+                    > div {
+                        margin: 50px 0;
+
+                        span {display: block; color: $color1;}
+                        span.name  {font-weight: 400; font-size: 30px;}
+                        span.place {font-weight: 400; font-size: 14px; margin-top: 5px;}
+                        span.info  {font-weight: 400; font-size: 14px; color: $fColor1; margin-top: 15px;}
+                    }
+                }
+            }
+        }
+    }
+
+    #cardView {
+        position: absolute;
+        top: 0;
+        display: none;
+
+        .header {
+            padding: 25px 25px 20px;
+            div {
+                text-align: center;
+                img {margin-bottom: 20px;}
+                span {
+                    display: block;
+                    font-weight: 300;
+                    text-align: center;
+                    color: $fColor2;
+                    font-size: 13px;
+                }
+            }
+            a {
+                position: absolute;
+                right: 15px;
+            }
+        }
+
+        .content {
+            a {
+                margin-top: 15px;
+                img {
+                    width: 126px;
+                    height: 209px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("fonts/HelveticaNeue.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("fonts/HelveticaNeue-Light.otf");
+  font-weight: 300;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 10px;
+}
+
+.grid-1 {
+  width: 8.33333%;
+}
+
+.grid-2 {
+  width: 16.66667%;
+}
+
+.grid-3 {
+  width: 25%;
+}
+
+.grid-4 {
+  width: 33.33333%;
+}
+
+.grid-5 {
+  width: 41.66667%;
+}
+
+.grid-6 {
+  width: 50%;
+}
+
+.grid-7 {
+  width: 58.33333%;
+}
+
+.grid-8 {
+  width: 66.66667%;
+}
+
+.grid-9 {
+  width: 75%;
+}
+
+.grid-10 {
+  width: 83.33333%;
+}
+
+.grid-11 {
+  width: 91.66667%;
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  background: #3a3b3b;
+  font-family: HelveticaNeue;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#container #cardMain, #container #cardView {
+  width: 413px;
+  height: 750px;
+  background: #ffffff;
+}
+#container #cardMain .header, #container #cardView .header {
+  height: 110px;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 40px 25px 20px;
+}
+#container #cardMain .header a, #container #cardView .header a {
+  position: relative;
+  text-decoration: none;
+}
+#container #cardMain .header a:nth-of-type(1), #container #cardView .header a:nth-of-type(1) {
+  top: 15px;
+}
+#container #cardMain .header a:nth-of-type(2), #container #cardView .header a:nth-of-type(2) {
+  top: 10px;
+}
+#container #cardMain .header a:nth-of-type(2) .badge, #container #cardView .header a:nth-of-type(2) .badge {
+  position: absolute;
+  right: 14px;
+  top: -6px;
+  background: #c4c4c4;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #000101;
+}
+#container #cardMain .header div span, #container #cardView .header div span {
+  display: block;
+  font-weight: 300;
+  text-align: center;
+}
+#container #cardMain .header div span:nth-of-type(1) {
+  color: #00ed00;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+#container #cardMain .header div span:nth-of-type(2) {
+  color: #a4a4a4;
+  font-size: 13px;
+}
+#container #cardMain .content {
+  padding: 0 15px;
+}
+#container #cardMain .content .item {
+  margin: 15px 0 0 0;
+  position: relative;
+}
+#container #cardMain .content .item img {
+  width: 100%;
+  position: relative;
+}
+#container #cardMain .content .item .details {
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 383px;
+  height: 187px;
+}
+#container #cardMain .content .item .details > img {
+  width: 70px;
+  margin: 69px 0;
+  border-radius: 50%;
+}
+#container #cardMain .content .item .details a img {
+  width: 40px;
+  margin: 82px 0;
+}
+#container #cardMain .content .item .details > div {
+  margin: 50px 0;
+}
+#container #cardMain .content .item .details > div span {
+  display: block;
+  color: #ffffff;
+}
+#container #cardMain .content .item .details > div span.name {
+  font-weight: 400;
+  font-size: 30px;
+}
+#container #cardMain .content .item .details > div span.place {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 5px;
+}
+#container #cardMain .content .item .details > div span.info {
+  font-weight: 400;
+  font-size: 14px;
+  color: #00ed00;
+  margin-top: 15px;
+}
+#container #cardView {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+#container #cardView .header {
+  padding: 25px 25px 20px;
+}
+#container #cardView .header div {
+  text-align: center;
+}
+#container #cardView .header div img {
+  margin-bottom: 20px;
+}
+#container #cardView .header div span {
+  display: block;
+  font-weight: 300;
+  text-align: center;
+  color: #a4a4a4;
+  font-size: 13px;
+}
+#container #cardView .header a {
+  position: absolute;
+  right: 15px;
+}
+#container #cardView .content a {
+  margin-top: 15px;
+}
+#container #cardView .content a img {
+  width: 126px;
+  height: 209px;
+  border-radius: 4px;
+}

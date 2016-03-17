@@ -1,0 +1,16 @@
+$columns: 12!default;
+$gutter:  20px!default;
+
+%grid {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 0 $gutter * 0.5;
+}
+
+@for $i from 1 through $columns {
+    .grid-#{$i} {
+        @extend %grid;
+        width: ($i / $columns * 100%);
+    }
+}

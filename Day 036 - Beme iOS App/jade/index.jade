@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+    head
+        title Day036 - Beme iOS App
+        link(rel="stylesheet", href="stylesheets/style.css")
+    body
+        #container
+            #cardMain
+                .header
+                    a(href="#" class="grid-2"): img(src="img/burger.png", alt="")
+                    div(class="grid-8")
+                        span paulflavius
+                        span 7 people spent 4m 28s as you
+                    a(href="#" class="grid-2" onclick="showHide(true)")
+                        img(src="img/emoji.png", alt="")
+                        span(class="badge") 7
+                .content
+                    .item
+                        img(src="img/content/content1.jpg", alt="")
+                        .details
+                            img(src="img/avatar/avatar1.png", alt="" class="grid-2")
+                            div(class="grid-8")
+                                span(class="name") casey
+                                span(class="place") Battery Park City, NYC, US
+                                span(class="info") Created 19m ago
+                            a(href="#"): img(src="img/arrow.png" alt="" class="grid-2")
+                    .item
+                        img(src="img/content/content2.jpg", alt="")
+                        .details
+                            img(src="img/avatar/avatar2.png", alt="" class="grid-2")
+                            div(class="grid-8")
+                                span(class="name") jake
+                                span(class="place") Tribeca, NYC, US
+                                span(class="info") Suggestion
+                            a(href="#"): img(src="img/arrow.png" alt="" class="grid-2")
+                    .item
+                        img(src="img/content/content3.jpg", alt="")
+                        .details
+                            img(src="img/avatar/avatar3.png", alt="" class="grid-2")
+                            div(class="grid-8")
+                                span(class="name") ryangosling
+                                span(class="place") Bucharest, Bucharest, RO
+                                span(class="info") Created 2h ago
+                            a(href="#"): img(src="img/arrow.png" alt="" class="grid-2")
+            #cardView
+                .header
+                    div
+                        img(src="img/emoji.png", alt="")
+                        span 7 reactions to your life
+                    a(href="" onclick="showHide(false)"): img(src="img/close.png", alt="")
+                .content
+                    a(href="" class="grid-4"): img(src="img/reactions/reaction1.png", alt="")
+                    a(href="" class="grid-4"): img(src="img/reactions/reaction2.png", alt="")
+                    a(href="" class="grid-4"): img(src="img/reactions/reaction3.png", alt="")
+                    a(href="" class="grid-4"): img(src="img/reactions/reaction4.png", alt="")
+                    a(href="" class="grid-4"): img(src="img/reactions/reaction5.png", alt="")
+        script(src="js/main.js")
