@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+
+    background: -webkit-radial-gradient($bColor2, $bColor1);
+    background:    -moz-radial-gradient($bColor2, $bColor1);
+    background:      -o-radial-gradient($bColor2, $bColor1);
+    background:         radial-gradient($bColor2, $bColor1);
+
+    font-family: Quicksand;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.ps-scrollbar-y-rail {
+    margin-top: 125px;
+}

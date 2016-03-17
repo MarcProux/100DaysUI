@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  background: -webkit-radial-gradient(#afabf7, #aeabf7);
+  background: -moz-radial-gradient(#afabf7, #aeabf7);
+  background: -o-radial-gradient(#afabf7, #aeabf7);
+  background: radial-gradient(#afabf7, #aeabf7);
+  font-family: Quicksand;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.ps-scrollbar-y-rail {
+  margin-top: 125px;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 2.5px 4.33px 18px 0px rgba(0, 0, 0, 0.08), 0px 16px 27px 0px rgba(0, 0, 0, 0.1), 0px 16px 180px 0px rgba(0, 0, 0, 0.9);
+  width: 500px;
+  height: 510px;
+}
+#container #header {
+  height: 50px;
+  background: #494545;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #808080;
+}
+#container #destination {
+  height: 170px;
+  background: #8ce589;
+  padding: 20px 36px;
+}
+#container #destination > div {
+  display: inline-block;
+  width: 211px;
+  height: 100%;
+}
+#container #destination > div span {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#container #destination > div span:nth-of-type(1) {
+  font-size: 100px;
+  letter-spacing: -10px;
+}
+#container #destination > div span:nth-of-type(2) {
+  font-size: 14px;
+}
+#container #content {
+  padding: 40px;
+}
+#container #content > div {
+  display: inline-block;
+  margin: 25px 25px;
+}
+#container #content > div:nth-of-type(1) {
+  margin: 25px 25px 25px 0;
+}
+#container #content .passenger_title, #container #content .flight_title, #container #content .seat_title, #container #content .gate_title {
+  color: #6dda6a;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+#container #content .passenger_name, #container #content .flight_name, #container #content .seat_name, #container #content .gate_name {
+  color: #2c2929;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+#container #content .passenger_title, #container #content .passenger_name, #container #content .flight_title, #container #content .flight_name, #container #content .seat_title, #container #content .seat_name, #container #content .gate_title, #container #content .gate_name {
+  display: block;
+  padding-bottom: 5px;
+}
