@@ -1,0 +1,70 @@
+.items-container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: flex;
+    align-items: center;
+
+    .item {
+        margin: 0 30px;
+        height: 350px;
+
+        img {
+            width: 240px;
+            height: 350px;
+
+            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.5);
+        }
+
+        span, a {display: none;}
+
+        transition: $transition;
+    }
+
+    .highlight {
+        background: $color2;
+        border-radius: 4px;
+        margin: 0;
+
+        height: 633px;
+
+        > img {
+            margin: 40px;
+        }
+
+        > span, > .price-container span, > a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        > span:nth-of-type(1) {color: $fColor1; font-size: 18px; padding-bottom: 5px; text-transform: uppercase;}
+        > span:nth-of-type(2) {color: $fColor2; font-size: 14px;}
+
+        > .price-container {
+            padding: 30px;
+        }
+
+        > .price-container span:nth-of-type(1) {color: $fColor3; font-size: 20px; padding-bottom: 5px;}
+        > .price-container span:nth-of-type(2) {color: $fColor2; font-size: 14px; text-decoration: line-through;}
+
+        > a {
+            background: $bColor1;
+            height: 50px;
+            border-radius: 0 0 4px 4px;
+
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color2;
+            line-height: 50px;
+
+            transition: $transition;
+
+            &:hover {
+                background: $fColor3;
+            }
+        }
+    }
+}

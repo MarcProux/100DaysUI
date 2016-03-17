@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        title Day081 - Floating Bookshelf
+        link(rel="stylesheet", href="stylesheets/style.css")
+    body
+        .items-container
+            .item(onclick="highlighted(this);")
+                img(src="img/img1_uid.jpg", alt="Floating Bookshelf")
+                span Understanding industrial design
+                span Principles for UX and 
+                    <br /> Interaction Design
+                .price-container
+                    span $29.99
+                    span $38.49
+                a(href="#") buy now
+            .item(onclick="highlighted(this);")
+                img(src="img/img2_eui.jpg", alt="Floating Bookshelf")
+                span Effective UI
+                span The Art of Building Great 
+                    <br /> User Experience in Software
+                .price-container
+                    span $28.39
+                    span $44.99
+                a(href="#") buy now
+            .item(onclick="highlighted(this);")
+                img(src="img/img3_dsi.jpg", alt="Floating Bookshelf")
+                span Designing social interfaces
+                span Principles, Patterns, and Practices 
+                    <br /> for Improving the User Experience
+                .price-container
+                    span $28.39
+                    span $44.99
+                a(href="#") buy now
+            .item(onclick="highlighted(this);")
+                img(src="img/img4_duxp.jpg", alt="Floating Bookshelf")
+                span Designing a UX portfolio
+                span A Practical Guide for Designers, 
+                    <br /> Researchers, Content Strategists, 
+                    <br /> and Developers
+                .price-container
+                    span $12.99
+                    span $25.99
+                a(href="#") buy now
+        script(src="js/main.js")
