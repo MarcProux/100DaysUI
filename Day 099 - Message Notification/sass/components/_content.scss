@@ -1,0 +1,27 @@
+.content {
+    padding: 50px 50px 20px 50px;
+    height: calc(100% - 80px);
+
+    .header {
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        color: $contentHC;
+
+        a {
+            color: $contentHAC;
+            text-decoration: none;
+        }
+    }
+
+    .body p {
+        color: $contentBC;
+        font-size: 18px;
+        font-weight: 500;
+
+        span {
+            padding: 30px 0 0 0;
+            display: block;
+        }
+    }
+}

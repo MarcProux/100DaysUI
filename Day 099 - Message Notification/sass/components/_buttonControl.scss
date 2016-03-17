@@ -1,0 +1,23 @@
+.buttonControl {
+    background: $buttonBg;
+    height: 80px;
+    line-height: 80px;
+
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+
+    a {
+        transition: color $transition-time $transition-method;
+
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $buttonColor;
+    }
+
+    a:hover {
+        color: darken($buttonHover, 15%);
+    }
+}
