@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        title Day086 - Order Tracking
+        link(rel="stylesheet", href="stylesheets/style.css")
+    body
+        #container
+            span(class="order_title") Your order
+            span(class="order_reference") XF14144517
+            
+            .progressOrder
+                .box.done
+                .sep.doneSep
+                .box.current
+                .sep.undoneSep
+                .box
+                
+                span(class="spanDone grid-33 left") Order placed
+                span(class="spanDone grid-33 center") In transit
+                span(class="spanUndone grid-33 right") Delivered
+            
+            #content
+                #info
+                    span(class="info_title") Shipped with
+                    span(class="info_data first") DHL
+                    span(class="info_title") Expected
+                    span(class="info_data") Friday, September 25
+                a(href="#" id="button")
+                    img(src="img/phone_icon.png", alt="")
+                .shadow

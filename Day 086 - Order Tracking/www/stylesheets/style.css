@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/ProximaNovaSoft-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/ProximaNovaSoft-Medium.otf");
+  font-weight: 500;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.grid-33 {
+  display: inline-block;
+  float: left;
+  width: 33%;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+html, body {
+  height: 100%;
+  background: #fcfcfc;
+  font-family: ProximaNova;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 700px;
+  width: 840px;
+  padding: 20px 59px;
+}
+#container .order_title, #container .order_reference {
+  display: block;
+  text-align: center;
+}
+#container .order_title {
+  padding: 0 0 15px 0;
+  color: #333333;
+  font-size: 30px;
+}
+#container .order_reference {
+  padding-bottom: 40px;
+  color: #999999;
+  font-size: 18px;
+}
+#container .progressOrder {
+  width: 100%;
+  height: 30px;
+}
+#container .progressOrder .box, #container .progressOrder .sep {
+  display: inline-block;
+}
+#container .progressOrder .box {
+  height: 14px;
+  width: 14px;
+  background: url(../img/box/box_undone.png) no-repeat;
+  margin: 8px 0;
+}
+#container .progressOrder .done {
+  background: url(../img/box/box_done.png) no-repeat;
+}
+#container .progressOrder .current {
+  height: 30px;
+  width: 30px;
+  background: url(../img/box/box_current.png) no-repeat;
+  margin: 0;
+}
+#container .progressOrder .sep {
+  width: 333px;
+  height: 2px;
+  margin: 14px -5px;
+}
+#container .progressOrder .sep.doneSep {
+  background: #000000;
+}
+#container .progressOrder .sep.undoneSep {
+  background: #c9c9c9;
+}
+#container .progressOrder span {
+  font-size: 14px;
+  font-weight: 500;
+}
+#container .progressOrder span.spanDone {
+  color: #212121;
+}
+#container .progressOrder span.spanUndone {
+  color: #999999;
+}
+#container #content {
+  position: absolute;
+  width: 450px;
+  height: 430px;
+  margin: 50px 135px;
+  background: url(../img/content_bg.png) center right no-repeat;
+}
+#container #content #info {
+  width: 400px;
+  height: 210px;
+  margin-top: 130px;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 10px 59px 0px rgba(0, 0, 0, 0.2);
+}
+#container #content #info span {
+  display: block;
+  font-size: 16px;
+}
+#container #content #info span.info_title {
+  color: #999999;
+  padding: 0 0 5px 0;
+}
+#container #content #info span.info_data {
+  color: #212121;
+}
+#container #content #info .first {
+  padding: 0 0 40px 0;
+}
+#container #content #button {
+  position: absolute;
+  bottom: 50px;
+  right: 15px;
+  padding: 20px;
+  border-radius: 50%;
+  background: #313133;
+  box-shadow: 0px 3px 0px 0px rgba(37, 37, 39, 0.95), 0px 36px 32px 0px rgba(8, 7, 8, 0.16), 0px 9px 32px 0px rgba(40, 43, 41, 0.56), 0px 26px 120px 0px rgba(0, 0, 0, 0.65);
+  z-index: 2;
+  transition: background .3s ease-in;
+}
+#container #content #button:hover {
+  background: #2a2a2a;
+}
+#container #content .shadow {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  height: 155px;
+  width: 81px;
+  background: url(../img/shadow.png);
+  opacity: 0.7;
+  z-index: 1;
+}

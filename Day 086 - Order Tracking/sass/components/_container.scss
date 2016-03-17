@@ -1,0 +1,119 @@
+#container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    height: 700px;
+    width: 840px;
+    padding: 20px 59px;
+
+    .order_title, .order_reference {
+        display: block;
+        text-align: center;
+    }
+
+    .order_title {
+        padding: 0 0 15px 0;
+        color: $fColor1;
+        font-size: 30px;
+    }
+    .order_reference {
+        padding-bottom: 40px;
+        color: $fColor2;
+        font-size: 18px;
+    }
+
+    .progressOrder {
+        width: 100%;
+        height: 30px;
+
+        .box, .sep {display: inline-block;}
+
+        .box {
+            height: 14px;
+            width: 14px;
+            background: url(../img/box/box_undone.png) no-repeat;
+            margin: 8px 0;
+        }
+        .done {
+            background: url(../img/box/box_done.png) no-repeat;
+        }
+        .current {
+            height: 30px;
+            width: 30px;
+            background: url(../img/box/box_current.png) no-repeat;
+            margin: 0;
+        }
+
+        .sep {
+            width: 333px;
+            height: 2px;
+            margin: 14px -5px;
+        }
+        .sep.doneSep {
+            background: $color1;
+        }
+        .sep.undoneSep {
+            background: $color2;
+        }
+
+        span {font-size: 14px; font-weight: 500;}
+        span.spanDone   {color: $fColor3;}
+        span.spanUndone {color: $fColor2;}
+    }
+
+    #content {
+        position: absolute;
+        width: 450px;
+        height: 430px;
+        margin: 50px 135px;
+        background: url(../img/content_bg.png) center right no-repeat;
+
+        #info {
+            width: 400px;
+            height: 210px;
+            margin-top: 130px;
+            padding: 50px;
+            background: $color3;
+            box-shadow: 0px 10px 59px 0px rgba($color1, 0.2);
+
+            span {
+                display: block;
+                font-size: 16px;
+            }
+            span.info_title {color: $fColor2; padding: 0 0 5px 0;}
+            span.info_data {color: $fColor3;}
+
+            .first {padding: 0 0 40px 0;}
+        }
+
+        #button {
+            position: absolute;
+            bottom: 50px; right: 15px;
+            padding: 20px;
+            border-radius: 50%;
+            background: $color4;
+            box-shadow: 0px 3px 0px 0px    rgba(37, 37, 39, 0.95),
+                        0px 36px 32px 0px  rgba( 8,  7,  8, 0.16),
+                        0px 9px 32px 0px   rgba(40, 43, 41, 0.56),
+                        0px 26px 120px 0px rgba( 0,  0,  0, 0.65);
+            z-index: 2;
+
+            transition: background .3s ease-in;
+        }
+
+        #button:hover {
+            background: $color5;
+        }
+
+        .shadow {
+            position: absolute;
+            bottom: -30px; right: 10px;
+            height: 155px;
+            width: 81px;
+            background: url(../img/shadow.png);
+            opacity: 0.7;
+            z-index: 1;
+        }
+    }
+}
