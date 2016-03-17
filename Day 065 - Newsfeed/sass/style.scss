@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/ProximaNovaSoft-Regular.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/ProximaNovaSoft-Bold.otf');
+    font-weight: 600;
+}
+
+@import "compass/reset";
+
+@import "components/vars";
+@import "components/general";
+@import "components/container";

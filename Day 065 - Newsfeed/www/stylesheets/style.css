@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/ProximaNovaSoft-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/ProximaNovaSoft-Bold.otf");
+  font-weight: 600;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  background: #f4d6de;
+  font-family: ProximaNova;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 750px;
+  width: 590px;
+}
+#container #header {
+  height: 130px;
+  background: #2a2932;
+  border-radius: 3px;
+}
+#container #header select, #container #header div {
+  float: left;
+}
+#container #header select {
+  width: 50%;
+  height: 100%;
+  border: none;
+  border-right: 2px solid #393744;
+  background: url("../img/arrow.png") no-repeat right 20px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 40px;
+  font-size: 36px;
+  color: #ffffff;
+  outline: none;
+}
+#container #header option {
+  border: none;
+  background: #2a2932;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#container #header > span {
+  color: #808080;
+  font-size: 20px;
+  position: absolute;
+  left: 45px;
+  top: 85px;
+}
+#container #header div {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  padding: 40px;
+}
+#container #header div span {
+  display: block;
+}
+#container #header div span:nth-of-type(1) {
+  font-size: 36px;
+  color: #ffffff;
+}
+#container #header div span:nth-of-type(2) {
+  font-size: 20px;
+  color: #808080;
+}
+#container #content {
+  height: 290px;
+  background: #ffffff;
+  border-radius: 3px;
+  margin: 18px 0;
+  padding: 30px 40px;
+}
+#container #content > .from {
+  margin: 0;
+}
+#container #content > .from span {
+  color: #b3adc8;
+}
+#container #content > .from a {
+  color: #46a4ec;
+  text-decoration: none;
+  padding-left: 3px;
+}
+#container #content > .data {
+  margin: 30px 0 10px;
+}
+#container #content > .data span.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2a2932;
+}
+#container #content > .data p {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #5c586b;
+}
+#container #content > .author img, #container #content > .author div {
+  display: inline-block;
+}
+#container #content > .author div {
+  vertical-align: top;
+  margin: 15px;
+}
+#container #content > .author div a, #container #content > .author div span {
+  font-size: 16px;
+  display: block;
+}
+#container #content > .author div a {
+  color: #46a4ec;
+  text-decoration: none;
+}
+#container #content > .author div span {
+  color: #b3adc8;
+}
+#container #progress {
+  height: 130px;
+  line-height: 130px;
+  background: #ffffff;
+}
+#container #progress a, #container #progress div {
+  display: inline-block;
+  float: left;
+}
+#container #progress a {
+  height: 23px;
+}
+#container #progress a:nth-of-type(1) {
+  padding: 0 20px 0 40px;
+}
+#container #progress a:nth-of-type(2) {
+  padding: 0 40px 0 20px;
+}
+#container #progress div {
+  padding: 35px 0;
+}
+#container #progress div span {
+  display: block;
+  line-height: 1.5rem;
+  text-align: center;
+}
+#container #progress div span.current {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2a2932;
+}
+#container #progress div span.next {
+  font-size: 20px;
+  color: #76718a;
+}
+#container progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: -49px;
+  width: 100%;
+  background: #ffffff;
+  height: 10px;
+  vertical-align: .3em;
+  overflow: hidden;
+  border-radius: 0 0 3px 3px;
+}
+#container progress::-moz-progress-bar {
+  background: #ffffff;
+  border-radius: 0 0 3px 3px;
+}
+#container progress::-webkit-progress-bar {
+  background: #ffffff;
+  border-radius: 0 0 3px 3px;
+}
+#container progress::-moz-progress-value {
+  background: #2a2932;
+}
+#container progress::-webkit-progress-value {
+  background: #2a2932;
+}

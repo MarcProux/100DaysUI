@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        title Day065 - Newsfeed
+        link(rel="stylesheet", href="stylesheets/style.css")
+    body
+        #container
+            #header
+                select(name="widget")
+                    option(value="news") News
+                    option(value="challenge") Challenge
+                span All
+                div
+                    span Posts
+                    span 14.2K
+            #content
+                .from
+                    span Published in
+                    a(href="") Sideblog
+                .data
+                    span(class="title") Web Development Reading List #100
+                    p What's happening in the industry? What important techniques have emerged recently? What about new case studies, insights, techniques and tools? 
+                .author
+                    img(src="img/avatar.png", alt="")
+                    div
+                        a(href="") Anselm Hannemann
+                        span 3hrs ago
+            #progress
+                a(href="#"): img(src="img/arrow_left.png", alt="")
+                div
+                    span(class="current") Web Development Reading List #100
+                    span(class="next") Next: Web Design Conferences Are Booming
+                a(href="#"): img(src="img/arrow_right.png", alt="")
+                progress(value="25" max="100")
